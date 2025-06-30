@@ -2,6 +2,9 @@ pipeline {
     agent {
         label 'node1'
     }
+    tools {
+        maven 'Maven 3.9.10'
+    }
     stages {
         stage('pull') {
             steps {
