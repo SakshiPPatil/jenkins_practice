@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('pull') {
             steps {
-               git 'https://github.com/SakshiPPatil/studentdata.git'
+              git branch: 'main', url: 'https://github.com/SakshiPPatil/studentdata.git'
                 echo "pulling successful"
             }
         }
